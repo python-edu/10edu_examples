@@ -22,8 +22,8 @@ Extend the script with the following features:
 
   - allow the user to provide a list of additional modules using the -d option (dependencies), e.g.:
     
-    ```
-      bash makeproj projname -d numpy pandas scipy
+    ```bash
+      makeproj projname -d numpy pandas scipy
     ```
 
   - the script should append these modules to the default list in requirements.txt
