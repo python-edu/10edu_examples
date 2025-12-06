@@ -4,7 +4,28 @@ A teaching script (tool) designed for:
 - automatic project creation
 - installation with the `pipx` manager
 
-Creates a `src-layout` structure on disk.
+
+## What It Does
+
+The script creates a complete project structure in the current directory:
+
+  - creates directories and subdirectories (src layout only)
+  - creates metadata files: pyproject.toml, README.md, requirements.txt
+  - creates __init__.py files
+  - creates a virtual environment
+  - creates a `src-layout` structure on disk.
+
+
+## Your Task
+
+Extend the script with the following features:
+
+  - allow the user to provide a list of additional modules using the -d option (dependencies), e.g.:
+    ```bash makeproj projname -d numpy pandas scipy```
+
+  - the script should append these modules to the default list in requirements.txt
+  - the script should install all modules listed in requirements.txt into the newly created virtual environment
+  - the script should fill in a minimal pyproject.toml using information provided in the `args` object 
 
 ---
 
